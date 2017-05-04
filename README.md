@@ -1,5 +1,7 @@
-A badass collection of colors for flat UIs and Material Design
+# Flat UI Colors
 
-See live here: http://benmildren.com/projects/flat-ui-colors/index.html
+A beautiful collection of colors for modern interfaces
 
-Codepen here: http://codepen.io/mildrenben/pen/JoBdGZ
+Available in Sass, LESS and Stylus.
+
+See them live [here](http://mildrenben.github.io/flat-ui-colors).

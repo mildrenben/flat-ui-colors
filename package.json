@@ -1,0 +1,30 @@
+{
+  "name": "flat-ui-colors",
+  "version": "1.0.0",
+  "description": "A collection of colors for flat UIs and Material Design.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "browser-sync": "2.18.8",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-pug": "3.3.0",
+    "gulp-sass": "3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mildrenben/flat-ui-colors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mildrenben/flat-ui-colors/issues"
+  },
+  "homepage": "https://github.com/mildrenben/flat-ui-colors#readme"
+}

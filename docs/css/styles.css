@@ -1,0 +1,288 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Muli', sans-serif;
+  line-height: 130%; }
+
+a {
+  cursor: pointer; }
+
+.Button {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 1.2em 1.8em;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  .Button--secondary {
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    color: #2196f3;
+    margin-right: 0.6em; }
+    .Button--secondary:hover {
+      border-color: rgba(0, 0, 0, 0.25); }
+  .Button--primary {
+    background: #2196f3;
+    color: white; }
+    .Button--primary:hover {
+      background: #0d8aee; }
+
+.Header {
+  margin: 4em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .Header_Title {
+    font-size: 1.9em;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+    margin: 0 0 0.3em; }
+  .Header_Description {
+    margin: 0;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 2em; }
+
+.Main {
+  background: #efefef; }
+  .Main_Wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative; }
+  .Main_Tip, .Main_Copied {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: -2.5em;
+    opacity: 0;
+    transform: translateY(0.3em) scale(0.85);
+    transition: all 0.2s ease;
+    will-change: opacity, transform; }
+  .Main_Tip {
+    color: rgba(0, 0, 0, 0.5); }
+  .Main_Copied {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: white; }
+    .Main_Copied--shown {
+      opacity: 1;
+      transform: translateY(0) scale(1); }
+    .Main_Copied_Swatch {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 20px;
+      margin-right: 0.5em; }
+    .Main_Copied_Hex {
+      color: #9e9e9e; }
+
+.Color {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  font-size: 0.91em;
+  width: 10%;
+  height: 9em;
+  vertical-align: bottom;
+  color: white;
+  cursor: pointer; }
+  .Color--turqoise {
+    background: #1abc9c; }
+  .Color--greenSea {
+    background: #16a085; }
+  .Color--emerald {
+    background: #2ecc71; }
+  .Color--nephritis {
+    background: #27ae60; }
+  .Color--green {
+    background: #4caf50; }
+  .Color--lightGreen {
+    background: #8bc34a; }
+  .Color--lime {
+    background: #cddc39; }
+  .Color--river {
+    background: #3498db; }
+  .Color--belize {
+    background: #2980b9; }
+  .Color--asphalt {
+    background: #34495e; }
+  .Color--midnightBlue {
+    background: #2c3e50; }
+  .Color--blue {
+    background: #2196f3; }
+  .Color--lightBlue {
+    background: #03a9f4; }
+  .Color--cyan {
+    background: #00bcd4; }
+  .Color--teal {
+    background: #009688; }
+  .Color--alizarin {
+    background: #e74c3c; }
+  .Color--pomegranate {
+    background: #c0392b; }
+  .Color--red {
+    background: #f44336; }
+  .Color--carrot {
+    background: #e67e22; }
+  .Color--pumpkin {
+    background: #d35400; }
+  .Color--dullOrange {
+    background: #f39c12; }
+  .Color--orange {
+    background: #ff9800; }
+  .Color--bloodOrange {
+    background: #ff5722; }
+  .Color--amber {
+    background: #ffc107; }
+  .Color--sunflower {
+    background: #f1c40f; }
+  .Color--yellow {
+    background: #ffeb3b; }
+  .Color--amethyst {
+    background: #9b59b6; }
+  .Color--plum {
+    background: #8e44ad; }
+  .Color--purple {
+    background: #9c27b0; }
+  .Color--deepPurple {
+    background: #673ab7; }
+  .Color--pink {
+    background: #e91e63; }
+  .Color--indigo {
+    background: #3f51b5; }
+  .Color--brown {
+    background: #795548; }
+  .Color--grey {
+    background: #9e9e9e; }
+  .Color--gunMetal {
+    background: #607d8b; }
+  .Color--asbestos {
+    background: #7f8c8d; }
+  .Color--concrete {
+    background: #95a5a6; }
+  .Color--silver {
+    background: #bdc3c7; }
+  .Color--clouds {
+    background: #ecf0f1; }
+  .Color--paper {
+    background: #efefef; }
+  .Color--offWhite {
+    background: #fcfcfc; }
+  .Color_Name {
+    text-transform: capitalize;
+    color: inherit;
+    font-weight: 600;
+    -ms-flex: 0;
+        flex: 0;
+    margin: 0 0 0.8em 0.8em;
+    opacity: 0;
+    transform: scale(0.4);
+    transform-origin: bottom left;
+    transition: all 0.15s ease-out; }
+  .Color_Input {
+    position: absolute;
+    left: -100000px;
+    top: -100000px; }
+  .Color:hover .Color_Name {
+    opacity: 1;
+    transform: scale(1); }
+  .Color:hover ~ .Main_Tip {
+    opacity: 1;
+    transform: translateY(0) scale(1); }
+  .Color--yellow, .Color--paper, .Color--clouds, .Color--offWhite {
+    color: #34495e; }
+
+.PostMain {
+  padding: 5em 0;
+  text-align: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.05); }
+
+.Footer {
+  padding: 3em 0 5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .Footer_Left .Footer_Link {
+    color: #2196f3; }
+    .Footer_Left .Footer_Link:hover {
+      color: #0c7cd5;
+      text-decoration: underline; }
+  .Footer_Right .Footer_Link {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.9em; }
+    .Footer_Right .Footer_Link:first-of-type {
+      margin-right: 1.5em; }
+    .Footer_Right .Footer_Link:hover {
+      color: rgba(0, 0, 0, 0.65); }
+  .Footer_Link {
+    text-decoration: none; }
+
+.Header,
+.Main_Wrapper,
+.PostMain_Wrapper,
+.Footer {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4em;
+  padding-right: 4em; }
+
+@media screen and (max-width: 1000px) {
+  html,
+  body {
+    font-size: 15px; }
+  .Header,
+  .Main_Wrapper,
+  .PostMain_Wrapper,
+  .Footer {
+    padding-left: 3em;
+    padding-right: 3em; }
+  .Color {
+    width: 16.666%; } }
+
+@media screen and (max-width: 650px) {
+  html,
+  body {
+    font-size: 14px; }
+  .Header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .Header_Right {
+      margin: 3em 0 2em; }
+  .Header,
+  .Main_Wrapper,
+  .PostMain_Wrapper,
+  .Footer {
+    padding-left: 2em;
+    padding-right: 2em; }
+  .Color {
+    width: 25%; }
+  .Main_Tip {
+    opacity: 1;
+    transform: translateY(0) scale(1); } }
+
+@media screen and (max-width: 400px) {
+  .Color {
+    width: 33.333%; } }
